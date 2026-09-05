@@ -88,6 +88,12 @@
           "image": "..作品のメイン画像"
         },
         {
+          "link": "../works/Features.mdx",
+          "title": "Features",
+          "description": "Markdown記法の一覧",
+          "image": ""
+        },
+        {
           "link": "../works/Sample.mdx",
           "title": "Transpiler",
           "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
@@ -103,6 +109,17 @@
           "title": "作品のタイトル",
           "description": "作品の簡単な説明",
           "image": "..作品のメイン画像"
+        }
+      ]
+    },
+    {
+      "name": "Markdown",
+      "articles": [
+        {
+          "link": "../works/Features.mdx",
+          "title": "Features",
+          "description": "Markdown記法の一覧",
+          "image": ""
         }
       ]
     },
