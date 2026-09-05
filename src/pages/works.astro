@@ -1,0 +1,149 @@
+---
+import { BASE_URL, SITE_TITLE } from "../consts";
+import Home from "../layouts/Home.astro";
+
+const articles=Object.values(import.meta.glob<any>("./works/*.mdx", {eager:true}));
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/public/img/**/*.{png,jpeg,jpg,gif,svg,webp,avif}', {eager: true});
+const image_map: Map<string, { default: ImageMetadata }> = new Map();
+
+articles.forEach(a => {
+  if(a.frontmatter.image != null && images['/public' + a.frontmatter.image] != null) {
+    image_map.set(a.frontmatter.image, images['/public' + a.frontmatter.image]);
+  }
+});
+---
+
+<Home og_url={BASE_URL+'works/'} og_image="/img/Works.avif" og_locale="ja_JP" og_site_name={SITE_TITLE} og_title="Works | 作品" og_description="文化祭で展示する作品などの記事を掲載している場所です。" og_type="website">
+  <div id="container">
+    <div id="grid">
+      {
+        articles.map(a=>{
+          const metadata = image_map.get(a.frontmatter.image);
+          const ratio = metadata != null ? metadata.default.height / metadata.default.width : null;
+          return <div class="grid-content" data-aspect-ratio={ratio}>
+            <a href={a.url+"/"}>
+              {image_map.has(a.frontmatter.image)?<img src={a.frontmatter.image} alt={a.frontmatter.title} />:null}
+              <div class="masonry-text">
+                <h4>{a.frontmatter.title}</h4>
+                <p>{a.frontmatter.description}</p>
+              </div>
+            </a>
+          </div>
+        })
+      }
+    </div>
+  </div>
+</Home>
+
+<style>
+#container{
+  container-type: inline-size;
+  background-color: var(--surface);
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  width: 100%;
+  min-height: calc(100dvh - 4rem);
+  @media (max-width: 785px) {
+    padding-block-start: calc(2rem + 40px);
+    min-height: calc(100dvh - 4rem - 40px);
+  }
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: 10px;
+  column-gap: 40px;
+  width: 100cqw;
+}
+
+.grid-content{
+  opacity: 0;
+  background-color: var(--surface-highest);
+  box-shadow: 0 0 5px var(--shadow);
+  border-radius: 1rem;
+  transition: all 0.5s  cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline dotted var(--primary);
+      img{
+        filter: opacity(50%);
+      }
+    }
+  }
+  img{
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: filter 0.25s ease-out;
+  }
+  .masonry-text{
+    padding: 1rem;
+  }
+  h4{
+    color: var(--on-surface);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-block: 0.5rem;
+  }
+  p{
+    font-size: 0.85rem;
+    color: var(--outline-variant);
+    margin-block: 0.1rem;
+  }
+}
+</style>
+
+<script>
+const parent=document.getElementById("grid")!;
+const targets=Array.from(parent!.children)as HTMLElement[];
+
+const gap = 4;
+let lines: number;
+const line_height = Number(getComputedStyle(parent).getPropertyValue('grid-auto-rows').replace('px', ''));
+let heights: number[];
+
+layout();
+
+const observer = new ResizeObserver(() => {
+  layout();
+});
+
+observer.observe(parent);
+
+function layout(){
+  targets.forEach(e => {
+    e.style.gridRow = '';
+    e.style.gridColumn = '';
+  });
+
+  lines = getComputedStyle(parent).getPropertyValue('grid-template-columns').split(" ").length;
+  heights = new Array(lines).fill(1);
+
+  targets.forEach((e,i,a)=>{
+    const rect = e.getElementsByClassName('masonry-text')[0].getBoundingClientRect();
+    const width = rect.width;
+    const height = Math.ceil((rect.height + (e.dataset.aspectRatio != null ? width * Number(e.dataset.aspectRatio!) : 0)) / line_height);
+    const data = getShortest();
+    e.style.opacity = '1';
+    e.style.gridRowStart = `${data.height}`;
+    e.style.gridRowEnd = `${data.height + height}`;
+    e.style.gridColumn = `${data.index + 1} / ${data.index + 2}`;
+    heights[data.index] = data.height + height + gap;
+  });
+}
+
+function getShortest(){
+  let r=1e10;
+  let idx=0;
+  heights.forEach((h,i,a)=>{
+    if(r>h){
+      r=h;
+      idx=i;
+    }
+  });
+  return {height:r,index:idx};
+}
+</script>
