@@ -1,6 +1,45 @@
 {
   "tags": [
     {
+      "name": "Python",
+      "articles": [
+        {
+          "link": "../works/88th_Yyama.mdx",
+          "title": "AI全任せで音ゲー完成した話",
+          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "articles": [
+        {
+          "link": "../works/88th_Yyama.mdx",
+          "title": "AI全任せで音ゲー完成した話",
+          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "articles": [
+        {
+          "link": "../works/88th_Yyama.mdx",
+          "title": "AI全任せで音ゲー完成した話",
+          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
+          "image": ""
+        },
+        {
+          "link": "../works/Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        }
+      ]
+    },
+    {
       "name": "作品に付きそうなタグ",
       "articles": [
         {
@@ -30,6 +69,12 @@
           "title": "作品のタイトル",
           "description": "作品の簡単な説明",
           "image": "..作品のメイン画像"
+        },
+        {
+          "link": "../works/Sample.mdx",
+          "title": "Transpiler",
+          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
+          "image": ""
         }
       ]
     },
@@ -43,21 +88,10 @@
           "image": "..作品のメイン画像"
         },
         {
-          "link": "../works/Features.mdx",
-          "title": "Features",
-          "description": "Markdown記法の一覧",
+          "link": "../works/Sample.mdx",
+          "title": "Transpiler",
+          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
           "image": ""
-        }
-      ]
-    },
-    {
-      "name": "Game",
-      "articles": [
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
         }
       ]
     },
@@ -73,12 +107,23 @@
       ]
     },
     {
-      "name": "Markdown",
+      "name": "TypeScript",
       "articles": [
         {
-          "link": "../works/Features.mdx",
-          "title": "Features",
-          "description": "Markdown記法の一覧",
+          "link": "../works/Sample.mdx",
+          "title": "Transpiler",
+          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "articles": [
+        {
+          "link": "../works/Sample.mdx",
+          "title": "Transpiler",
+          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
           "image": ""
         }
       ]

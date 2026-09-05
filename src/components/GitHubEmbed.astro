@@ -153,7 +153,7 @@ async function parseCode(){
           [...Array(code_lines.end-code_lines.start).keys()].map((_,i)=><span>{code_lines.start+i+1}</span>)
         }
         </span>
-        <Code code={code} lang={lang as any} themes={{light: 'github-light-default', dark: 'github-dark-default'}} defaultColor='light-dark()'/>:
+        <Code code={code} lang={lang as any} theme={"github-light-default"}/>:
       <p></p>
     }
     
@@ -162,17 +162,17 @@ async function parseCode(){
 
 <style>
 .github-embed{
-  background-color: var(--surface-low);
+  background-color: #f6f8fa;
   border-radius: 6px;
   margin: 16px 0;
   border-radius: 10px;
-  border: 1px solid var(--outline);
+  border: 1px solid #e1e4e8;
 }
 .github-embed-header{
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  border-bottom: 1px solid var(--outline);
+  border-bottom: 1px solid #e1e4e8;
 }
 .github-embed-icon{
   width: 20px;
@@ -186,7 +186,7 @@ async function parseCode(){
 .github-embed-link{
   font-size: 14px;
   font-weight: bold;
-  color: var(--primary);
+  color: #0366d6;
   text-decoration: none;
 }
 .github-embed-link:hover{
@@ -194,12 +194,12 @@ async function parseCode(){
 }
 .github-embed-location{
   font-size: 12px;
-  color: var(--outline-variant);
+  color: #586069;
   margin-block: 4px;
 }
 .github-commit-link{
   font-size: 12px;
-  color: var(--outline-variant);
+  color: #586069;
   text-decoration: none;
   &:hover{
     text-decoration: underline;
@@ -208,7 +208,7 @@ async function parseCode(){
 .github-embed-code{
   display: flex;
   flex-direction: row;
-  background-color: var(--surface-highest);
+  background-color: #fff;
   border-radius: 0 0 10px 10px;
   overflow: auto;
   max-height: 30vh;
@@ -216,11 +216,11 @@ async function parseCode(){
   pre{
     border-radius: 10px;
     margin: 0;
-    background-color: var(--surface-highest)!important;
+    background-color: #fff!important;
     overflow:auto;
     height: fit-content;
     >code{
-      background-color: var(--surface-highest)!important;
+      background-color: #fff!important;
       padding-left: 16px;
     }
   }
@@ -235,7 +235,7 @@ async function parseCode(){
   }
   a{
     padding: 16px;
-    color: var(--primary);
+    color: #0366d6;
     text-decoration: none;
     &:hover{
       text-decoration: underline;
@@ -253,7 +253,7 @@ async function parseCode(){
   flex-direction: column;
   padding: 16px;
   padding-right: 0;
-  color: var(--outline-variant);
+  color: #788089;
   font-size: 0.9rem;
   line-height: 1.2rem;
   user-select: none;

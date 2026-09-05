@@ -14,7 +14,7 @@ let has_ogp=(og_description||og_image||og_title||og_url)?true:false;
 let response="";
 try{
   //OGPを取得したいサイトのHTMLをテキスト形式で取得
-  response=await fetch(url).then(r=>r.text()).catch(e => {throw new Error()});
+  response=await fetch(url).then(r=>r.text());
 }catch(_){}
 if(!response&&!has_ogp){
   //URLで指定したサイトにOGPが設定されていない場合、URLをタイトルにする
@@ -59,10 +59,10 @@ const ogp=has_ogp?{//自分でOGPのパラメータを決めたときはその�
   display: flex;
   justify-content: end;
   text-decoration: none;
-  background-color: var(--surface-highest);
-  color: var(--on-surface);
+  background-color: #fff;
+  color: #333;
   border-radius: 10px;
-  border-color: var(--outline);
+  border-color: #3333;
   border-style: solid;
   border-width: 1px;
   margin-block: 1rem;
@@ -87,7 +87,7 @@ const ogp=has_ogp?{//自分でOGPのパラメータを決めたときはその�
 
 .card-desc{
   margin: 0.2rem 0rem;
-  color: var(--outline-variant);
+  color: #777;
   flex-grow: 1;
   font-size: 0.85rem;
   display: -webkit-box;
