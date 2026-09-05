@@ -2,7 +2,7 @@
 import { BASE_URL } from "../consts";
 import Home from "../layouts/Home.astro";
 
-const articles=await Astro.glob("./works/*");
+const articles = Object.values(import.meta.glob("./works/*", { eager: true }));
 
 ---
 
