@@ -12,7 +12,7 @@ export const SITE_TITLE = '六甲学院物理部2026';
 //サイトの説明
 export const SITE_DESCRIPTION = '六甲学院物理部の2026年度オンライン文化祭サイトです。（学校非公式）';
 //Google Analytics 4のトラッキングID。
-export const TRACKING_ID = 'G-うんたらかんたら';
+export const TRACKING_ID = 'G-PNL0V0JF6D';
 //サイドバーのメニューたち
 export const SITE_MENU = [
   {
