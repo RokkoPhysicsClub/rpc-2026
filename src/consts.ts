@@ -20,7 +20,7 @@ export const SITE_TITLE: string = `六甲学院物理部${YEAR}`;
 export const SITE_DESCRIPTION: string = `六甲学院物理部の${YEAR}年度オンライン文化祭サイトです。（学校非公式）`;
 
 //Google Analytics 4のトラッキングID。
-export const TRACKING_ID: string = 'G-うんたらかんたら';
+export const TRACKING_ID: string = 'G-WC4VGZNGN2';
 
 //サイドバーのメニューたち
 export const SITE_MENU = [
