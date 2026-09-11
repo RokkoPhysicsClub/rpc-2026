@@ -1,63 +1,12 @@
 {
   "tags": [
     {
-      "name": "Python",
-      "articles": [
-        {
-          "link": "../works/88th_Yyama.mdx",
-          "title": "AI全任せで音ゲー完成した話",
-          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
-          "image": ""
-        }
-      ]
-    },
-    {
-      "name": "AI",
-      "articles": [
-        {
-          "link": "../works/88th_Yyama.mdx",
-          "title": "AI全任せで音ゲー完成した話",
-          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
-          "image": ""
-        }
-      ]
-    },
-    {
-      "name": "Game",
-      "articles": [
-        {
-          "link": "../works/88th_Yyama.mdx",
-          "title": "AI全任せで音ゲー完成した話",
-          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
-          "image": ""
-        },
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
-          "image": "..作品のメイン画像"
-        }
-      ]
-    },
-    {
       "name": "作品に付きそうなタグ",
       "articles": [
         {
           "link": "../works/Example.mdx",
           "title": "作品のタイトル",
           "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
           "image": "..作品のメイン画像"
         }
       ]
@@ -70,12 +19,6 @@
           "title": "作品のタイトル",
           "description": "作品の簡単な説明",
           "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
-          "image": "..作品のメイン画像"
         }
       ]
     },
@@ -87,18 +30,6 @@
           "title": "作品のタイトル",
           "description": "作品の簡単な説明",
           "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
-          "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
-          "image": ""
         }
       ]
     },
@@ -116,18 +47,17 @@
           "title": "Features",
           "description": "Markdown記法の一覧",
           "image": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "articles": [
         {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
+          "link": "../works/Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
           "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
-          "image": ""
         }
       ]
     },
@@ -139,12 +69,6 @@
           "title": "作品のタイトル",
           "description": "作品の簡単な説明",
           "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
-          "image": "..作品のメイン画像"
         }
       ]
     },
@@ -155,28 +79,6 @@
           "link": "../works/Features.mdx",
           "title": "Features",
           "description": "Markdown記法の一覧",
-          "image": ""
-        }
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "articles": [
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
-          "image": ""
-        }
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "articles": [
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
           "image": ""
         }
       ]
