@@ -1,6 +1,52 @@
 {
   "tags": [
     {
+      "name": "Game",
+      "articles": [
+        {
+          "link": "../works/87th_Ebony_hex-avoid.mdx",
+          "title": "Hex Avoid",
+          "description": "特殊な座標軸(六角形)上で弾を避けるゲームです。",
+          "image": ""
+        },
+        {
+          "link": "../works/87th_Ebony_number-blocks.mdx",
+          "title": "NUMBER BLOCKS",
+          "description": "数字ブロックを崩していくブロック崩しゲームです。",
+          "image": ""
+        },
+        {
+          "link": "../works/88th_Yyama.mdx",
+          "title": "AI全任せで音ゲー完成した話",
+          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
+          "image": ""
+        },
+        {
+          "link": "../works/Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        }
+      ]
+    },
+    {
+      "name": "C++",
+      "articles": [
+        {
+          "link": "../works/87th_Ebony_hex-avoid.mdx",
+          "title": "Hex Avoid",
+          "description": "特殊な座標軸(六角形)上で弾を避けるゲームです。",
+          "image": ""
+        },
+        {
+          "link": "../works/87th_Ebony_number-blocks.mdx",
+          "title": "NUMBER BLOCKS",
+          "description": "数字ブロックを崩していくブロック崩しゲームです。",
+          "image": ""
+        }
+      ]
+    },
+    {
       "name": "Python",
       "articles": [
         {
@@ -19,23 +65,6 @@
           "title": "AI全任せで音ゲー完成した話",
           "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
           "image": ""
-        }
-      ]
-    },
-    {
-      "name": "Game",
-      "articles": [
-        {
-          "link": "../works/88th_Yyama.mdx",
-          "title": "AI全任せで音ゲー完成した話",
-          "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
-          "image": ""
-        },
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
         }
       ]
     },
