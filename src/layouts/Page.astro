@@ -7,6 +7,8 @@ type heading={ depth: number;slug: string;text: string; };
 type heading_hierarchy={parent:heading,child:heading[]};
 const title=Astro.props.frontmatter.title;
 const author=Astro.props.frontmatter.author;
+const period=Astro.props.frontmatter.period;
+
 //見出し一覧を取得
 const headings=Astro.props.headings;
 //ディレクトリから記事であるか判断
@@ -45,6 +47,7 @@ const tags:string[]=Astro.props.frontmatter.tags||[];
 <Home og_url={BASE_URL+(is_article?Astro.url.toString().match(/works\/.+/):"")} og_title={title} og_description={Astro.props.frontmatter.description} og_image={Astro.props.frontmatter.image?BASE_URL+Astro.props.frontmatter.image.substring(1):undefined} og_locale={BASE_URL} og_site_name={SITE_TITLE} og_type="website" >
   <div id="container">
     {title?<h1 class="title" id={slugify(title)}>{title}</h1>:null}
+    {period?<p class="period">{period}</p>:null}
     {author?<p class="author">{author}</p>:null}
     {
       tags.length>0?
