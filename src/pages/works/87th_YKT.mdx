@@ -7,19 +7,19 @@ author: "YKT"
 tags: ["Physics" , "3D"]
 ---
 
-# *はじめに*
+# **はじめに**
 
 去年、2D physics engineを作成したので、去年に引き続き今年は3D physics engineを作成しました。
 
 unityやunreal engineなどのゲームエンジン、BulletやPhysXなどのライブラリに頼らずに、C++でopenGL(レンダリング用)を使ってvisual studioで自作しました。
 
-# *3D physics engineについて*
+# **3D physics engineについて**
 
 3D physics engineとは、剛体(外力を受けても形が変化しない物体)の運動及び相互作用を物理法則に従ってコンピュータ上でシミュレーションするシステムです。
 
 シミュレーションのメインループは主に「重力の適応」,「位置、回転の更新」,「衝突検出」,「衝突応答」の要素から成り立っています。
 
-# *2D physics engineと3D physics engineの違い*
+# **2D physics engineと3D physics engineの違い**
 
 1. 回転の表現
 
@@ -41,7 +41,7 @@ unityやunreal engineなどのゲームエンジン、BulletやPhysXなどのラ
 
 しかし3Dでは、物体同士が「面と面」「辺と辺」で接触するため、複数の接触点を正確に割り出し、それぞれの点に対して同時にインパルス（撃力）の計算を行う必要があります。
 
-# *openGLで実装したこと*
+# **openGLで実装したこと**
 
 中学3年で勉強したことのメインは物理エンジンではなく3Dレンダリングです。
 

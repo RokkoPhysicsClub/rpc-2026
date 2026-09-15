@@ -1,13 +1,93 @@
 {
   "tags": [
     {
-      "name": "Game",
+      "name": "作品に付きそうなタグ",
       "articles": [
         {
-          "link": "../works/85th_Numa.mdx",
+          "link": "../works/(Sample!)Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        }
+      ]
+    },
+    {
+      "name": "例えば、",
+      "articles": [
+        {
+          "link": "../works/(Sample!)Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        }
+      ]
+    },
+    {
+      "name": "Processing",
+      "articles": [
+        {
+          "link": "../works/(Sample!)Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        },
+        {
+          "link": "../works/85th_Dojo_than_time.mdx",
           "title": "エンターキー瓦割り道場",
           "description": "でっかいエンターキーを使ったゲーム",
           "image": "../img/Numa/Start_Menu.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "articles": [
+        {
+          "link": "../works/(Sample!)Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        },
+        {
+          "link": "../works/(Sample!)Features.mdx",
+          "title": "Features",
+          "description": "Markdown記法の一覧",
+          "image": ""
+        },
+        {
+          "link": "../works/(Sample!)mdx_write_refalence.mdx",
+          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
+          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
+          "image": "..any"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "articles": [
+        {
+          "link": "../works/(Sample!)Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        },
+        {
+          "link": "../works/85th_Dojo_than_time.mdx",
+          "title": "エンターキー瓦割り道場",
+          "description": "でっかいエンターキーを使ったゲーム",
+          "image": "../img/Numa/Start_Menu.jpg"
+        },
+        {
+          "link": "../works/86th_Haru.mdx",
+          "title": "Maze",
+          "description": "迷路ゲームです",
+          "image": ""
+        },
+        {
+          "link": "../works/86th_tkd.mdx",
+          "title": "小型ゲーム機",
+          "description": "Arduino Dueでゲームができるようにしました",
+          "image": ""
         },
         {
           "link": "../works/87th_Ebony_hex-avoid.mdx",
@@ -22,13 +102,18 @@
           "image": ""
         },
         {
-          "link": "../works/88th_Yyama.mdx",
+          "link": "../works/88th_Latto.mdx",
           "title": "AI全任せで音ゲー完成した話",
           "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
           "image": "../img/Y_yama/Phythim_Select_menu.png"
-        },
+        }
+      ]
+    },
+    {
+      "name": "など",
+      "articles": [
         {
-          "link": "../works/Example.mdx",
+          "link": "../works/(Sample!)Example.mdx",
           "title": "作品のタイトル",
           "description": "作品の簡単な説明",
           "image": "..作品のメイン画像"
@@ -36,19 +121,30 @@
       ]
     },
     {
-      "name": "Processing",
+      "name": "Markdown",
       "articles": [
         {
-          "link": "../works/85th_Numa.mdx",
-          "title": "エンターキー瓦割り道場",
-          "description": "でっかいエンターキーを使ったゲーム",
-          "image": "../img/Numa/Start_Menu.jpg"
+          "link": "../works/(Sample!)Features.mdx",
+          "title": "Features",
+          "description": "Markdown記法の一覧",
+          "image": ""
         },
         {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
+          "link": "../works/(Sample!)mdx_write_refalence.mdx",
+          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
+          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
+          "image": "..any"
+        }
+      ]
+    },
+    {
+      "name": "mdx",
+      "articles": [
+        {
+          "link": "../works/(Sample!)mdx_write_refalence.mdx",
+          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
+          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
+          "image": "..any"
         }
       ]
     },
@@ -70,10 +166,44 @@
       ]
     },
     {
+      "name": "3D",
+      "articles": [
+        {
+          "link": "../works/87th_Fuji.mdx",
+          "title": "PoolRooms",
+          "description": "3DCG動画をblenderで作成しました。",
+          "image": "../img/Fuji/Blender.jpg"
+        },
+        {
+          "link": "../works/87th_YKT.mdx",
+          "title": "Real-time 3D Physics Engine",
+          "description": "3D physics engineを作成しました",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "articles": [
+        {
+          "link": "../works/87th_YKT.mdx",
+          "title": "Real-time 3D Physics Engine",
+          "description": "3D physics engineを作成しました",
+          "image": ""
+        },
+        {
+          "link": "../works/88th_WestPhysics.mdx",
+          "title": "投石器",
+          "description": "レゴで投石器を作ってみた",
+          "image": "../img/WestPhysics/Main.jpg"
+        }
+      ]
+    },
+    {
       "name": "Python",
       "articles": [
         {
-          "link": "../works/88th_Yyama.mdx",
+          "link": "../works/88th_Latto.mdx",
           "title": "AI全任せで音ゲー完成した話",
           "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
           "image": "../img/Y_yama/Phythim_Select_menu.png"
@@ -84,94 +214,10 @@
       "name": "AI",
       "articles": [
         {
-          "link": "../works/88th_Yyama.mdx",
+          "link": "../works/88th_Latto.mdx",
           "title": "AI全任せで音ゲー完成した話",
           "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
           "image": "../img/Y_yama/Phythim_Select_menu.png"
-        }
-      ]
-    },
-    {
-      "name": "作品に付きそうなタグ",
-      "articles": [
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
-        }
-      ]
-    },
-    {
-      "name": "例えば、",
-      "articles": [
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
-        }
-      ]
-    },
-    {
-      "name": "Web",
-      "articles": [
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/Features.mdx",
-          "title": "Features",
-          "description": "Markdown記法の一覧",
-          "image": ""
-        },
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
-          "image": "..any"
-        }
-      ]
-    },
-    {
-      "name": "など",
-      "articles": [
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
-        }
-      ]
-    },
-    {
-      "name": "Markdown",
-      "articles": [
-        {
-          "link": "../works/Features.mdx",
-          "title": "Features",
-          "description": "Markdown記法の一覧",
-          "image": ""
-        },
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
-          "image": "..any"
-        }
-      ]
-    },
-    {
-      "name": "mdx",
-      "articles": [
-        {
-          "link": "../works/mdx_write_refalence.mdx",
-          "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
-          "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
-          "image": "..any"
         }
       ]
     }
