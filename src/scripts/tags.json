@@ -4,6 +4,12 @@
       "name": "Game",
       "articles": [
         {
+          "link": "../works/85th_Numa.mdx",
+          "title": "エンターキー瓦割り道場",
+          "description": "でっかいエンターキーを使ったゲーム",
+          "image": ""
+        },
+        {
           "link": "../works/87th_Ebony_hex-avoid.mdx",
           "title": "Hex Avoid",
           "description": "特殊な座標軸(六角形)上で弾を避けるゲームです。",
@@ -20,6 +26,23 @@
           "title": "AI全任せで音ゲー完成した話",
           "description": "今流行りのCodexに頼んだらノーコーディングで音ゲーが完成してしまった",
           "image": "../img/Y_yama/Phythim_Select_menu.png"
+        },
+        {
+          "link": "../works/Example.mdx",
+          "title": "作品のタイトル",
+          "description": "作品の簡単な説明",
+          "image": "..作品のメイン画像"
+        }
+      ]
+    },
+    {
+      "name": "Processing",
+      "articles": [
+        {
+          "link": "../works/85th_Numa.mdx",
+          "title": "エンターキー瓦割り道場",
+          "description": "でっかいエンターキーを使ったゲーム",
+          "image": ""
         },
         {
           "link": "../works/Example.mdx",
@@ -91,23 +114,6 @@
       ]
     },
     {
-      "name": "Processing",
-      "articles": [
-        {
-          "link": "../works/Example.mdx",
-          "title": "作品のタイトル",
-          "description": "作品の簡単な説明",
-          "image": "..作品のメイン画像"
-        },
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
-          "image": ""
-        }
-      ]
-    },
-    {
       "name": "Web",
       "articles": [
         {
@@ -127,12 +133,6 @@
           "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
           "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
           "image": "..any"
-        },
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
-          "image": ""
         }
       ]
     },
@@ -172,28 +172,6 @@
           "title": "物理部ホームページ 部誌執筆者向け MDX完全ガイド",
           "description": "Markdownの基本からMDX、JSX、数式、画像、コード、記事テンプレートまでを学ぶための物理部向けガイド",
           "image": "..any"
-        }
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "articles": [
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
-          "image": ""
-        }
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "articles": [
-        {
-          "link": "../works/Sample.mdx",
-          "title": "Transpiler",
-          "description": "ProcessingのコードをJavaScriptに変換するTranspiler",
-          "image": ""
         }
       ]
     }
