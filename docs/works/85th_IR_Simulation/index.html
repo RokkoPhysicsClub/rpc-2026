@@ -1,0 +1,173 @@
+<!DOCTYPE html><head prefix="og: https://ogp.me/ns#" data-TrackingID="G-WC4VGZNGN2"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><meta lang="ja"><meta name="google-site-verification" content="CT-CN4TbnrtfjHjN6Oe3NKMewseQjDWf3EkBK6O24Ko"><meta property="og:url" content="https://rokkophysicsclub.github.io/rpc-2026/works/85th_IR_Simulation/"><meta property="og:type" content="website"><meta property="og:title" content="振り子のシミュレーションゲーム"><meta property="og:image" content="https://rokkophysicsclub.github.io/rpc-2026/img/RPC.png"><meta property="og:site_name" content="六甲学院物理部2026"><meta property="og:description" content="名前の通りです"><meta property="og:locale" content="https://rokkophysicsclub.github.io/rpc-2026/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="振り子のシミュレーションゲーム"><meta name="twitter:description" content="名前の通りです"><meta name="twitter:image" content="https://rokkophysicsclub.github.io/rpc-2026/img/RPC.png"><meta name="twitter:site" content="@RokkoPhysics"><title>六甲学院物理部2026</title><script>
+    const theme = localStorage.getItem('theme') ?? '';
+
+    document.documentElement.style.setProperty('color-scheme', theme);
+      
+    switch(theme) {
+      case "light":
+        document.documentElement.style.setProperty('--theme-highlight-left', `${0.25}rem`);
+        break;
+      case "dark":
+        document.documentElement.style.setProperty('--theme-highlight-left', `${0.25 + 2.75}rem`);
+        break;
+      case "":
+        document.documentElement.style.setProperty('--theme-highlight-left', `${0.25 + 2.75 * 2}rem`);
+        break;
+    }
+  </script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet"><link rel="icon" sizes="48x48" href="../../favicon.ico"><link rel="icon" href="../../favicon.svg" sizes="any" type="image/svg+xml"><link rel="apple-touch-icon" href="../../apple-touch-icon.png"><meta name="mobile-web-app-capable" content="yes"><script async src="https://www.googletagmanager.com/gtag/js?id=G-WC4VGZNGN2"></script><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', document.head.dataset.trackingid);
+  </script><link rel="stylesheet" href="../../astro/Page.D5kupVPn.css"></head> <body data-astro-cid-k74dcqyt> <div id="main-wrapper" data-astro-cid-k74dcqyt> <div id="sidebar-wrapper" data-astro-cid-k74dcqyt> <div id="title-container" data-astro-cid-ssfzsv2f> <h1 id="title" data-astro-cid-ssfzsv2f><a href="../../" data-astro-cid-ssfzsv2f>六甲学院物理部2026</a></h1> <p id="title-desc" data-astro-cid-ssfzsv2f>六甲学院物理部の2026年度オンライン文化祭サイトです。（学校非公式）</p> <ul class="menu" data-astro-cid-ssfzsv2f> <li data-astro-cid-ssfzsv2f><span class="list-icon" style data-astro-cid-ssfzsv2f></span><a href="../../" style data-astro-cid-ssfzsv2f>Welcome</a></li><li data-astro-cid-ssfzsv2f><span class="list-icon" style="border-color:var(--primary);" data-astro-cid-ssfzsv2f></span><a href="../../works/" style="color:var(--primary);" data-astro-cid-ssfzsv2f>Works</a></li><li data-astro-cid-ssfzsv2f><span class="list-icon" style data-astro-cid-ssfzsv2f></span><a href="../../tags/" style data-astro-cid-ssfzsv2f>Tags</a></li><li data-astro-cid-ssfzsv2f><span class="list-icon" style data-astro-cid-ssfzsv2f></span><a href="../../links/" style data-astro-cid-ssfzsv2f>Links</a></li><li data-astro-cid-ssfzsv2f><span class="list-icon" style data-astro-cid-ssfzsv2f></span><a href="../../about/" style data-astro-cid-ssfzsv2f>About</a></li> </ul> <div id="social" data-astro-cid-ssfzsv2f> <a class="sns-icon" href="https://x.com/RokkoPhysics" data-astro-cid-ssfzsv2f><svg viewBox="0 0 512 512" data-astro-cid-ssfzsv2f="true"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg></a><a class="sns-icon" href="https://github.com/RokkoPhysicsClub" data-astro-cid-ssfzsv2f><svg viewBox="0 0 496 512" data-astro-cid-ssfzsv2f="true"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg></a><a class="sns-icon" href="https://www.youtube.com/channel/UCvLDGaFKdbpQ7vELdrUSyCw" data-astro-cid-ssfzsv2f><svg viewBox="0 0 576 512" data-astro-cid-ssfzsv2f="true"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" /></svg></a><a class="sns-icon" href="https://sp.nicovideo.jp/user/88466335" data-astro-cid-ssfzsv2f><svg role="img" viewBox="0 0 24 24" data-astro-cid-ssfzsv2f="true"><path d="M.4787 7.534v12.1279A2.0213 2.0213 0 0 0 2.5 21.6832h2.3888l1.323 2.0948a.4778.4778 0 0 0 .4043.2205.4778.4778 0 0 0 .441-.2205l1.323-2.0948h6.9828l1.323 2.0948a.4778.4778 0 0 0 .441.2205c.1838 0 .3308-.0735.4043-.2205l1.323-2.0948h2.6462a2.0213 2.0213 0 0 0 2.0213-2.0213V7.5339a2.0213 2.0213 0 0 0-2.0213-1.9845h-7.681l4.4468-4.4469L17.1637 0l-5.1452 5.1452L6.8 0 5.6973 1.1025l4.4102 4.4102H2.5367a2.0213 2.0213 0 0 0-2.058 2.058z" /></svg></a> </div> <div id="selector-container" data-astro-cid-lgn464si> <div id="theme-highlight" data-index="2" data-astro-cid-lgn464si></div> <div id="button-container" data-astro-cid-lgn464si> <button class="theme-button" data-type="light" data-astro-cid-lgn464si> <svg width="800px" height="800px" viewBox="0 0 24 24" data-astro-cid-lgn464si="true">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75ZM6.25 12C6.25 8.82436 8.82436 6.25 12 6.25C15.1756 6.25 17.75 8.82436 17.75 12C17.75 15.1756 15.1756 17.75 12 17.75C8.82436 17.75 6.25 15.1756 6.25 12ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z" />
+</svg> </button><button class="theme-button" data-type="dark" data-astro-cid-lgn464si> <svg width="800px" height="800px" viewBox="0 0 24 24" data-astro-cid-lgn464si="true">
+<path d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447Z" />
+</svg> </button><button class="theme-button" data-type="os" data-astro-cid-lgn464si> <svg width="800px" height="800px" viewBox="0 0 24 24" data-astro-cid-lgn464si="true"><path d="M20.017 14.669L23 13.564l-.012-3.208-2.996-1.085a8.455 8.455 0 0 0-.437-1.05l1.329-2.893-2.277-2.26-2.886 1.351a8.396 8.396 0 0 0-1.052-.436L13.564 1l-3.208.012-1.085 2.996a8.485 8.485 0 0 0-1.05.437L5.328 3.116l-2.26 2.276L4.419 8.28a8.378 8.378 0 0 0-.436 1.052L1 10.436l.012 3.208 2.996 1.085a8.46 8.46 0 0 0 .437 1.05l-1.329 2.893 2.276 2.26 2.887-1.351a8.383 8.383 0 0 0 1.052.436L10.436 23l3.208-.012 1.085-2.996a8.478 8.478 0 0 0 1.05-.437l2.893 1.329 2.26-2.276-1.351-2.887a8.382 8.382 0 0 0 .436-1.052zm-.287 3.73l-1.275 1.285-2.694-1.238-.429.215a7.612 7.612 0 0 1-.928.385l-.452.156-1.01 2.789-1.81.007-1.03-2.779-.456-.151a7.394 7.394 0 0 1-.926-.385l-.43-.21-2.688 1.257-1.286-1.275 1.239-2.695-.216-.43a7.551 7.551 0 0 1-.386-.926l-.155-.452-2.79-1.01-.005-1.81 2.777-1.03.152-.456a7.46 7.46 0 0 1 .384-.927l.212-.43L4.27 5.601l1.275-1.285 2.694 1.238.429-.215a7.612 7.612 0 0 1 .928-.385l.452-.156 1.01-2.789 1.81-.007 1.03 2.779.456.151a7.35 7.35 0 0 1 .925.385l.43.211L18.4 4.27l1.285 1.275-1.239 2.695.216.43a7.551 7.551 0 0 1 .386.926l.155.452 2.79 1.01.005 1.81-2.777 1.03-.152.456a7.46 7.46 0 0 1-.384.927l-.212.43zM12 7.2a4.8 4.8 0 1 0 4.8 4.8A4.8 4.8 0 0 0 12 7.2zm0 8.6a3.8 3.8 0 1 1 3.8-3.8 3.804 3.804 0 0 1-3.8 3.8z" /><path fill="none" d="M0 0h24v24H0z" /></svg> </button> </div> </div>  <script type="module">const l=Array.from(document.getElementsByClassName("theme-button")),e=document.getElementById("theme-highlight");l.forEach(t=>{t.addEventListener("click",m=>{switch(m.target.dataset.type){case"light":e.style.left=`${.25}rem`,document.documentElement.style.setProperty("color-scheme","light"),document.documentElement.style.setProperty("--theme-highlight-left",`${.25}rem`),localStorage.setItem("theme","light");break;case"dark":e.style.left=`${.25+2.75}rem`,document.documentElement.style.setProperty("color-scheme","dark"),document.documentElement.style.setProperty("--theme-highlight-left",`${.25+2.75}rem`),localStorage.setItem("theme","dark");break;case"os":e.style.left=`${.25+2.75*2}rem`,document.documentElement.style.setProperty("color-scheme",""),document.documentElement.style.setProperty("--theme-highlight-left",`${.25+2.75*2}rem`),localStorage.setItem("theme","");break}})});</script> <p id="credit" data-astro-cid-ssfzsv2f>©2026 六甲学院物理部</p> </div> </div> <button id="menu-button" onpointerdown="document.getElementById('sidebar-wrapper').classList.toggle('active');this.classList.toggle('active')" data-astro-cid-k74dcqyt> <svg viewBox="0 0 448 512" data-astro-cid-k74dcqyt="true"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg>
+Menu
+</button> <div id="content-wrapper" data-astro-cid-k74dcqyt>  <div id="container" data-astro-cid-qo5xhe7c> <h1 class="title" id="振り子のシミュレーションゲーム" data-astro-cid-qo5xhe7c>振り子のシミュレーションゲーム</h1> <p class="author" data-astro-cid-qo5xhe7c>85期_IR</p> <div id="tag-list" data-astro-cid-qo5xhe7c> <button class="tag-element" onclick="window.location.assign(&quot;../../tags/?tag=Physics&quot;)" data-astro-cid-blwjyjpt> <span class="tag-icon" data-astro-cid-blwjyjpt> <span class="icon-text" data-astro-cid-blwjyjpt>
+#
+</span> </span> <p class="tag-text" data-astro-cid-blwjyjpt>Physics</p> </button><button class="tag-element" onclick="window.location.assign(&quot;../../tags/?tag=Python&quot;)" data-astro-cid-blwjyjpt> <span class="tag-icon" data-astro-cid-blwjyjpt> <span class="icon-text" data-astro-cid-blwjyjpt>
+#
+</span> </span> <p class="tag-text" data-astro-cid-blwjyjpt>Python</p> </button> </div> <div id="slot" data-astro-cid-qo5xhe7c> <h1 id="はじめに"><strong>はじめに</strong></h1>
+<p>みなさんこんにちは。</p>
+<p>物理部の部長を務めさせていただいております、石井と申します。</p>
+<p>本日は第66回文化祭GARBERAにお越しいただきありがとうございます。</p>
+<p>文化祭での、そして物理部での時間をぜひお楽しみください。</p>
+<p>私が展示を行うのは、振り子のシミュレーションゲームです。</p>
+<p>Pythonという言語で作成しました。詳しくは概要をご覧ください。</p>
+<h1 id="概要"><strong>概要</strong></h1>
+<p>単振り子、二重振り子のシミュレーションに対し操作を行い、30秒の制限時間内でハイスコアを目指すゲームです。</p>
+<p>振り子が上に上がっている状態が長ければ長いほど得点が上がります。</p>
+<p>イメージとしては、手のひらに箒などの長いものをのせてバランスをとる遊びです。</p>
+<p>箒までは行かずとも、少なからず何かのバランスをとって遊んだことは誰しもあると思います。</p>
+<p>難易度は部誌執筆時点で5段階、操作方法はマウスカーソルで大半が操作できるようになっており、PまたはEscキーでゲームプレイの一時停止、再開、Rキーで最初からのやり直しが可能です。</p>
+<p>余談ですが二重振り子では点数をとることが不可能に限りなく近いので、ぜひ観賞用としてお楽しみください。設定から初期値を変更することも可能です。</p>
+<h1 id="解説"><strong>解説</strong></h1>
+<p>Pythonという言語で作成しました。</p>
+<p>使用ライブラリは</p>
+<ul>
+<li>
+<p>math</p>
+</li>
+<li>
+<p>sys</p>
+</li>
+<li>
+<p>pygame</p>
+</li>
+</ul>
+<p>くらいで、そこまで特殊なことは行っていません。</p>
+<p>二重振り子のシミュレーションには先駆者が山ほどいるので、詳しくて正しい理論はそちらをご覧になっていただきたいです。</p>
+<p>要点だけつまんで記載します。</p>
+<hr/>
+<h2 id="単振り子の場合">単振り子の場合:</h2>
+<ul>
+<li>
+<p>初期値を与える。(少し傾いているので、重力で動き出す)</p>
+</li>
+<li>
+<p>プレイヤーの操作によって与えられた加速度を考慮し、パラメータ調整。</p>
+</li>
+<li>
+<p>新しいパラメータからx座標、角速度、加速度などを計算。</p>
+</li>
+<li>
+<p>描画。</p>
+</li>
+<li>
+<p>一定の角度の間の場合得点。</p>
+</li>
+</ul>
+<hr/>
+<h2 id="二重振り子の場合">二重振り子の場合:</h2>
+<p>単振り子に加え二つの振り子の間の影響も加味します。</p>
+<p>単振り子の場合のみ減衰を加えています。</p>
+<hr/>
+<p>コードの構造は以下のとおりです。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="python"><code><span class="line"></span>
+<span class="line"><span style="color:#F97583">	import</span><span style="color:#E1E4E8"> pygame</span></span>
+<span class="line"><span style="color:#F97583">	from</span><span style="color:#E1E4E8"> pygame.locals </span><span style="color:#F97583">import</span><span style="color:#F97583"> *</span></span>
+<span class="line"><span style="color:#F97583">	import</span><span style="color:#E1E4E8"> math</span></span>
+<span class="line"><span style="color:#F97583">	import</span><span style="color:#E1E4E8"> sys</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	#定数</span></span>
+<span class="line"><span style="color:#79B8FF">	SCREEN_WIDTH</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> 100</span></span>
+<span class="line"><span style="color:#E1E4E8">	:</span></span>
+<span class="line"><span style="color:#E1E4E8">	:</span></span>
+<span class="line"><span style="color:#E1E4E8">	</span></span>
+<span class="line"><span style="color:#6A737D">	#ボタン</span></span>
+<span class="line"><span style="color:#F97583">	class</span><span style="color:#B392F0"> Button</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#6A737D">	  #init</span></span>
+<span class="line"><span style="color:#6A737D">	  #描画</span></span>
+<span class="line"><span style="color:#6A737D">	  #クリック判定</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	#単振り子</span></span>
+<span class="line"><span style="color:#F97583">	class</span><span style="color:#B392F0"> SimplePendulum</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#6A737D">	  #初期化・リスタート</span></span>
+<span class="line"><span style="color:#6A737D">	  #角度、角速度、加速度から角度、角速度の計算</span></span>
+<span class="line"><span style="color:#6A737D">	  #RK4(オイラー法より精度がいい)で状態を更新</span></span>
+<span class="line"><span style="color:#6A737D">	  #def get_positions(self, pivot_x)で振り子の位置をreturn</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	#二重振り子</span></span>
+<span class="line"><span style="color:#F97583">	class</span><span style="color:#B392F0"> DoublePendulum</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#6A737D">	  #基本的に単振り子と同じ</span></span>
+<span class="line"><span style="color:#6A737D">	  #振り子の位置をどちらもreturn</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	#ゲーム本体</span></span>
+<span class="line"><span style="color:#F97583">	class</span><span style="color:#B392F0"> Game</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#6A737D">	  #init</span></span>
+<span class="line"><span style="color:#6A737D">	  #UI</span></span>
+<span class="line"><span style="color:#F97583">	  def</span><span style="color:#B392F0"> create_menu_buttons</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#E1E4E8">	  :</span></span>
+<span class="line"><span style="color:#E1E4E8">	  :</span></span>
+<span class="line"><span style="color:#6A737D">	  #状態変更</span></span>
+<span class="line"><span style="color:#F97583">	  def</span><span style="color:#B392F0"> start_game</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#79B8FF">	    self</span><span style="color:#E1E4E8">.state </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> “</span><span style="color:#79B8FF">PLAYING</span><span style="color:#E1E4E8">”</span></span>
+<span class="line"><span style="color:#E1E4E8">	  :</span></span>
+<span class="line"><span style="color:#E1E4E8">	  :</span></span>
+<span class="line"><span style="color:#6A737D">	  #マウス操作</span></span>
+<span class="line"><span style="color:#6A737D">	    #範囲制限を行う</span></span>
+<span class="line"><span style="color:#6A737D">	  #ゲーム更新</span></span>
+<span class="line"><span style="color:#6A737D">	  #イベント処理</span></span>
+<span class="line"><span style="color:#6A737D">	  #描画補助</span></span>
+<span class="line"><span style="color:#F97583">	  def</span><span style="color:#B392F0"> draw_text</span><span style="color:#E1E4E8">(self, text, x, y, font </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> None</span><span style="color:#E1E4E8">, center </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> False</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#6A737D">	    #かなり使う</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  #使い分ける</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	  #固定端描画</span></span>
+<span class="line"><span style="color:#6A737D">	  #振り子描画</span></span>
+<span class="line"><span style="color:#6A737D">	  #プレイ画面描画</span></span>
+<span class="line"><span style="color:#6A737D">	  #メニュー画面描画</span></span>
+<span class="line"><span style="color:#6A737D">	  #設定画面描画</span></span>
+<span class="line"><span style="color:#6A737D">	  #スコア画面</span></span>
+<span class="line"><span style="color:#6A737D">	  #結果画面描画</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	  #共通UI描画</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  #メインループ</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">#エントリーポイント</span></span>
+<span class="line"><span style="color:#F97583">if</span><span style="color:#79B8FF"> __name__</span><span style="color:#F97583"> ==</span><span style="color:#E1E4E8"> “__main__” :</span></span>
+<span class="line"><span style="color:#E1E4E8">  game </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> Game()</span></span>
+<span class="line"><span style="color:#E1E4E8">  game.run()</span></span>
+<span class="line"></span></code></pre>
+<h1 id="感想"><strong>感想</strong></h1>
+<p>作ったきっかけは、機械による三重振り子の制御の動画を見かけたからです。</p>
+<p>そこから概要にあるように箒のバランスをとる遊びを思い出しました。</p>
+<p>簡単に操作できるゲームを作れたことは良かったと思います。</p>
+<p>実はこの作品の制作には、かなりAIに手伝ってもらいました。</p>
+<p>前述の通り振り子の部分は多数先行例があり、詰まることがあっても問題なく進むことができました。
+今日のAIの成長には驚かされるばかりです。
+数年前までAIにプログラミングなんてさせられないレベルでしたが、今となっては数秒で整ったコードが出力されます。</p>
+<p>おそらく今回のコードもすぐに作り上げてしまうでしょう。</p>
+<p>ところで、今年の文化祭の各企画のロゴやポスターはご覧になっていただけましたでしょうか？提出されているもののAI生成画像の割合が大幅に増加しています。</p>
+<p>今はまだギリギリ見分けがつきますが、いつしか見分けられなくなってしまうかもしれません。技術の進歩を感じると同時に、少し味気ないとも思います。今後もAIとの付き合い方について考え続けなくてはいけないと、深々と思わされるばかりです。</p>
+<p>私は、今回の文化祭でこの部活での活動も一区切りつくことになります。この部活での経験を活かし、今後も色々なものを制作していきたいと思います。</p> </div> </div> <div id="heading-list" data-astro-cid-qo5xhe7c> <div id="heading-container" data-astro-cid-qo5xhe7c> <div class="heading-box" data-astro-cid-qo5xhe7c> <h2 id="author-box" data-astro-cid-qo5xhe7c>85期_IR</h2> </div> <div class="heading-box" id="box-sticky" data-astro-cid-qo5xhe7c> <div class="list-container" data-astro-cid-qo5xhe7c> <ol class="ol-depth-1" data-astro-cid-qo5xhe7c> <li data-astro-cid-qo5xhe7c> <a href="#振り子のシミュレーションゲーム" id="anchor-振り子のシミュレーションゲーム" data-astro-cid-qo5xhe7c> 振り子のシミュレーションゲーム </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#はじめに" id="anchor-はじめに" data-astro-cid-qo5xhe7c> はじめに </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#概要" id="anchor-概要" data-astro-cid-qo5xhe7c> 概要 </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#解説" id="anchor-解説" data-astro-cid-qo5xhe7c> 解説 </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#単振り子の場合" id="anchor-単振り子の場合" data-astro-cid-qo5xhe7c> 単振り子の場合: </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#二重振り子の場合" id="anchor-二重振り子の場合" data-astro-cid-qo5xhe7c> 二重振り子の場合: </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#感想" id="anchor-感想" data-astro-cid-qo5xhe7c> 感想 </a>  </li> </ol> </div> </div> </div> </div>
+        <button id="heading-menu" data-astro-cid-qo5xhe7c>
+目次
+<span class="menu-arrow" data-astro-cid-qo5xhe7c></span> </button>
+        <div class="heading-box" id="menu-heading-box" data-astro-cid-qo5xhe7c> <div class="list-container" data-astro-cid-qo5xhe7c> <ol class="ol-depth-1" data-astro-cid-qo5xhe7c> <li data-astro-cid-qo5xhe7c> <a href="#振り子のシミュレーションゲーム" id="anchor-振り子のシミュレーションゲーム" data-astro-cid-qo5xhe7c> 振り子のシミュレーションゲーム </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#はじめに" id="anchor-はじめに" data-astro-cid-qo5xhe7c> はじめに </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#概要" id="anchor-概要" data-astro-cid-qo5xhe7c> 概要 </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#解説" id="anchor-解説" data-astro-cid-qo5xhe7c> 解説 </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#単振り子の場合" id="anchor-単振り子の場合" data-astro-cid-qo5xhe7c> 単振り子の場合: </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#二重振り子の場合" id="anchor-二重振り子の場合" data-astro-cid-qo5xhe7c> 二重振り子の場合: </a>  </li><li data-astro-cid-qo5xhe7c> <a href="#感想" id="anchor-感想" data-astro-cid-qo5xhe7c> 感想 </a>  </li> </ol> </div> </div> </div> </div> </body>   <script type="module">class h{target;headers;anchor_map;constructor(e){this.target=document.getElementById(e);const s=this.target?Array.from(this.target.getElementsByTagName("a")):[];this.headers=[],s.forEach(t=>{this.headers.push({e:document.getElementById(t.id.substring(7)),n:t.id.substring(7)})}),this.anchor_map=s.map(t=>({n:t.id.substring(7),e:t}))}highlight(){let e=this.headers[0],s=!1;const t=scrollY+scrollY/(document.body.clientHeight-window.innerHeight)*window.innerHeight;this.headers.forEach((o,g)=>{s||(o.e.offsetTop>t?(this.anchor_map.forEach(n=>{n.n==e.n?n.e.style.color="var(--primary)":n.e.style.color=""}),s=!0):g==this.headers.length-1?this.anchor_map.forEach(n=>{n.n==o.n?n.e.style.color="var(--primary)":n.e.style.color=""}):e=o)})}}const l=new h("box-sticky");l.highlight();const a=new h("menu-heading-box");a.highlight();window.addEventListener("scroll",()=>{l.highlight(),a.highlight()});const r=document.getElementById("heading-menu"),i=document.getElementById("menu-heading-box");r?.addEventListener("pointerdown",c=>{const e=r.getElementsByClassName("menu-arrow")[0];e.classList.toggle("open"),e.classList.contains("open")?(i.style.opacity="1",i.style.pointerEvents="all"):(i.style.opacity="0",i.style.pointerEvents="none")});</script>
