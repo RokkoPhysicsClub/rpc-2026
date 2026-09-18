@@ -1,0 +1,52 @@
+---
+layout: "../../layouts/Page.astro"
+image: "作品のメイン画像"
+title: "作品のタイトル"
+description: "作品の簡単な説明"
+author: "著者"
+tags: ["作品に付きそうなタグ","例えば、","Processing","Web","Game","など"]
+---
+import Card from "../../components/Card.astro";
+import Warn from "../../components/Warn.astro";
+import Error from "../../components/Error.astro";
+import GitHubEmbed from "../../components/GitHubEmbed.astro";
+
+ここに内容が入るよ
+
+## 見出しとか
+
+- 箇条書きしたり
+
+`コードも書けたり`
+
+```java
+複数行にまたがって
+スケッチを書けたりする
+```
+
+> 引用はいつも通り
+
+---
+
+こんな風に書けます。
+
+## コンポーネントの紹介
+### Card
+Cardコンポーネントを使うと、リンクカードを作成することができます。
+
+<Card url="https://rokkophysicsclub.github.io/rpc-2024/"/>
+
+### Warn
+Warnコンポーネントを使うと、注意書きを作成することができます。
+
+<Warn>注意書きの内容</Warn>
+
+### Error
+Errorコンポーネントを使うと、エラー文を作成することができます。
+
+<Error>エラー文の内容</Error>
+
+### GitHubEmbed
+GitHubEmbedコンポーネントを使うと、GitHubのリポジトリを埋め込むことができます。
+
+<GitHubEmbed permalink="https://github.com/Asynchronous-0x4C/Simple_Shooting_2.1/blob/main/Simple_shooting_2_1/net.pde#L1-L17"/>
