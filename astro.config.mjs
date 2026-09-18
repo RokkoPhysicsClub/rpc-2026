@@ -90,4 +90,8 @@ export default defineConfig({
       },
     ],
   },
+  //プロジェクト全体のツールバーの非表示(表示する場合はコメントアウト)
+  devToolbar: {
+    enabled: false
+  },
 });
